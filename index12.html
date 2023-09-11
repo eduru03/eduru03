@@ -6,30 +6,30 @@
     <title>Document</title>
     <style>
         #id1{
-            font-size: 30px;
+            font-size: 20px;
             -webkit-text-fill-color: rgba(255, 255, 255, 0.864);
         }
         #id2{
-            background-color: #A22B55;
+            background-color: rgb(97, 6, 6);
             width:940px;
             height:575px;
             padding-top: 35px;
             padding-left: 135px;
         }
         #id3{
-            background-color: #75203F;
+            background-color: rgb(165, 10, 41);
             width:675px;
             height:500px;
             padding-left: 126px;
             padding-top: 35px;
         }
         #id4{
-            font-size: 25px;
+            font-size: 20px;
         }
         #id5{
             background-color: white;
             -webkit-text-fill-color: black;
-            font-size: 30px;
+            font-size: 20px;
             width: 550px;
             height:45px;
             border-top-left-radius: 5px;
@@ -41,17 +41,9 @@
         #id6{
           width:312px;
         }
-        #id7{
-            font-size: 25px;
-            -webkit-text-fill-color: rgba(255, 255, 255, 0.864);
-        }
-        input[type='radio']{
-            width:18px;
-            height:18px;
-        }
     </style>
 </head>
-<body style="margin-top:55px; margin-left:221px;">
+<body>
     <div id="id2">
         <div id="id3">
             <form action="https://www.amazon.in">
@@ -94,11 +86,11 @@
                         </td>
                         <td id="id4">
                             <label id="id1">Male: </label>
-                            <input id="id4" type="radio" name="gender" value="male"/>
+                            <input id="id4" type="radio" />
                             <label id="id1">Female: </label>
-                            <input id="id4" type="radio" name="gender" value="female"/>
+                            <input id="id4" type="radio" />
                             <label id="id1">Other: </label>
-                            <input id="id4" type="radio" name="gender" value="other"/>
+                            <input id="id4" type="radio" />
                         </td>
                     </tr>
                     <tr><td></td></tr>
@@ -120,6 +112,7 @@
                     <tr>
                         <td><label id="id1" for="address">Zip Code:</label></td>
                         <td><input id="id4" type="text" Address="address"/></td>
+                        <!--<textarea id="address" name="address"></textarea>-->
                     </tr>
                     <tr><td></td></tr>
                     <tr><td></td></tr>
@@ -128,6 +121,7 @@
                     <tr>
                         <td><label id="id1" for="Age">About:</label></td>
                         <td><textarea id="id6" name="address" placeholder="Write about yourself..." rows="3"></textarea></td>
+                        <!--<input id="id4" type="text" Age="age" placeholder="Write about yourself..."/>-->
                     </tr>
                     <tr><td></td></tr>
                     <tr><td></td></tr>
