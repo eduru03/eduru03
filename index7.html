@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table.code1 {
+            border: 1px solid black;
+            padding-top: 7px;
+            padding-left: 7px;
+            padding-right: 7px;
+            margin-left:250px;
+        }
+        ul.code1:not(.active) {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 230px;
+            width: 230px;
+            background-color: #92e0ee;
+            font-size: x-large;
+            margin-bottom: -1.8px;
+        }
+        li.code1 a {
+            display: block;
+            color: #0628eb;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li.code1 a.active {
+            background-color: rgb(255, 162, 0);
+            color: white;
+        }
+        li.code1 a.active:hover {
+            background-color: rgb(255, 0, 68);
+            color: white;
+        }
+        li.code1 a:hover:not(.active) {
+            background-color: #009d86;
+            color: rgb(255, 255, 255);
+        }
+        ul.code2{
+            list-style-type: none;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 3px;
+            margin-right: -3px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: lightgray;
+        }
+        table.code2 {
+            border: 1px solid black;
+            margin-left: 120px;
+            width: 496px;
+            margin-left: 630px;
+        }
+        li.code2 {
+            float: left;
+            border-right: 1px solid blue;
+        }
+        li.code2 a {
+            display: block;
+            color: blue;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        li.code2 a.active {
+            background-color: gray;
+            color: white;
+        }
+        li.code2 a:hover {
+            background-color: orange;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table class="code1">
+        <b style="text-align: center;"><p style="margin-top: 100px; margin-left: -771px; font-size: 20px;">Vertical Navigation Bar</p></b>
+        <tr>
+            <td>
+                <ul class="code1">
+                    <li class="code1"><a class="active" href="#home">Home</a></li>
+                    <li class="code1"><a href="#news">Java</a></li>
+                    <li class="code1"><a href="#contact">CSS</a></li>
+                    <li class="code1"><a href="#about">HTML</a></li>
+                    <li class="code1"><a href="#about">Bootstrap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <table class="code2">
+        <b style="text-align: center;"><p style="margin-top: -215px; margin-left: 177px; font-size: 20px;">Horizontal Navigation Bar</p></b></br>
+        <tr>
+            <td>
+                <ul class="code2">
+                    <li class="code2"><a class="active" href="#home">Home</a></li>
+                    <li class="code2"><a href="#">Java</a></li>
+                    <li class="code2"><a href="#">HTML</a></li>
+                    <li class="code2"><a href="#">CSS</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
