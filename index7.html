@@ -1,155 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
-        
-        #id{
-            border-collapse: collapse;
-            height: 300px;
-            width:300px;
-            table-layout: auto;
-        }
-        #id1{
-            height:323px;
-            width:275px;
-            border-color: black;
-            padding-top: 15px;
-            padding-left: 10px;
-            padding-right: 40px;
-            padding-bottom: 0px;
-        }
-        #id3{
-            white-space: pre;
-            -webkit-text-fill-color: white;
-            font-size: 25px;
-        }
-        #id4{
-            background-color: orange;
-            height:30px ;
-
-        }
-        #id5{
-            background-color: #ADD9E6;
-        }
-        #id6{
-            white-space: pre;
-            -webkit-text-fill-color: blue;
-            font-size: 25px;
-        }
-        #id7{
-            white-space: pre;
-            font-size: 20px;
-        }
-        #id11{
-            height:55px;
-            width: 500px;
-            border-color: black; 
+        table.code1 {
+            border: 1px solid black;
+            padding-top: 7px;
             padding-left: 7px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 0px;
+            padding-right: 7px;
+            margin-left:250px;
         }
-        #id12{
-            height: 30px;
-            width:500px;
-            padding-left: 5px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 0px;
-            border-collapse: collapse;
-            table-layout: auto;
+        ul.code1:not(.active) {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 230px;
+            width: 230px;
+            background-color: #92e0ee;
+            font-size: x-large;
+            margin-bottom: -1.8px;
         }
-        #id13{
-            white-space: pre;
-            font-size: 25px;
+        li.code1 a {
+            display: block;
+            color: #0628eb;
+            padding: 8px 16px;
+            text-decoration: none;
         }
-        #id14{
-            background-color: #85827D;
-            
+        li.code1 a.active {
+            background-color: rgb(255, 162, 0);
+            color: white;
         }
-        #id15{
-            white-space: pre;
-            -webkit-text-fill-color: white;
-            font-size-adjust: 1000px;
+        li.code1 a.active:hover {
+            background-color: rgb(255, 0, 68);
+            color: white;
+        }
+        li.code1 a:hover:not(.active) {
+            background-color: #009d86;
+            color: rgb(255, 255, 255);
+        }
+        ul.code2{
+            list-style-type: none;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 3px;
+            margin-right: -3px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: lightgray;
+        }
+        table.code2 {
+            border: 1px solid black;
+            margin-left: 120px;
+            width: 496px;
+            margin-left: 630px;
+        }
+        li.code2 {
+            float: left;
+            border-right: 1px solid blue;
+        }
+        li.code2 a {
+            display: block;
+            color: blue;
+            font-size: 20px;
             text-align: center;
-            
+            padding: 10px 20px;
+            text-decoration: none;
         }
-        #id16{
-            background-color: #D3D3D3;
-            border-left:2px solid blue;
+        li.code2 a.active {
+            background-color: gray;
+            color: white;
         }
-        #id17{
-            white-space: pre;
-            font-size: 15px;
-            -webkit-text-fill-color: blue;
-            text-align: center;
-            font-size: 15px;
-                     
-        }
-        #id18{
-            white-space: pre;
-            font-size: 15px;
-            -webkit-text-fill-color: lightgrey;
-            text-align: center;
+        li.code2 a:hover {
+            background-color: orange;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <table border="1" bordercolor="white" bgcolor="white" height="600px" width="1000px">
+    <table class="code1">
+        <b style="text-align: center;"><p style="margin-top: 100px; margin-left: -771px; font-size: 20px;">Vertical Navigation Bar</p></b>
         <tr>
-            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             <td>
-                <p id="id7"><b>     Vertical Navigation Bar</b></p>
-                <div id="id1" style="border: 1px solid black">
-                    <table id="id" border="0" bordercolor="black">
-                        <tr>
-                            <td id="id4">
-                                <p id="id3">  Home</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="id5">
-                                <p id="id6">  Java</p>
-                                <p id="id6">  CSS</p>
-                                <p id="id6">  HTML</p>
-                                <p id="id6">  Bootstrap</p>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+                <ul class="code1">
+                    <li class="code1"><a class="active" href="#home">Home</a></li>
+                    <li class="code1"><a href="#news">Java</a></li>
+                    <li class="code1"><a href="#contact">CSS</a></li>
+                    <li class="code1"><a href="#about">HTML</a></li>
+                    <li class="code1"><a href="#about">Bootstrap</a></li>
+                </ul>
             </td>
-            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+    <table class="code2">
+        <b style="text-align: center;"><p style="margin-top: -215px; margin-left: 177px; font-size: 20px;">Horizontal Navigation Bar</p></b></br>
+        <tr>
             <td>
-                <p id="id13"><b>                    Horizontal Navigation Bar</b></p>
-                </br>
-                <div id="id11" style="border: 1px solid black; width: 500px;">
-                    <table id="id12" border="0" bordercolor="darkblue">
-                        <tr>
-                            <td id="id14">
-                                <p id="id15"><b style="font-size:larger;"> Home </b></p>
-                            </td>
-                            <td id="id16">
-                                <p id="id17"><b style="font-size:larger;"> Java </b></p>
-                            </td>
-                            <td id="id16">
-                                <p id="id17"><b style="font-size:larger;"> HTML </b></p>
-                            </td>
-                            <td id="id16">
-                                <P id="id17"><b style="font-size:larger;"> CSS </b></P>
-                            </td>
-                            <td id="id16">
-                                <p id="id18"><b style="font-size:larger;">HTML</b></p>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+                <ul class="code2">
+                    <li class="code2"><a class="active" href="#home">Home</a></li>
+                    <li class="code2"><a href="#">Java</a></li>
+                    <li class="code2"><a href="#">HTML</a></li>
+                    <li class="code2"><a href="#">CSS</a></li>
+                </ul>
             </td>
         </tr>
     </table>
 </body>
+
 </html>

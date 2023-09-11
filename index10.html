@@ -1,89 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vertical Nav Bars</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <style>/* Reset some default styles */
-        li{
-            padding: 3px;
-        }
-        body, ul {
-            margin: 0;
-            padding: 0;
-        }
-        
-        /* Basic styling for the container */
-        .container {
-            display: flex;
-            background-color: #ecde17;
-            height:400px
-        }
-        
-        /* Style for the vertical navigation bar */
-        .vertical-nav {
-            width: 200px;
-            background-color: #fffafa;
-            color: #fff;
-            padding: 20px;
-        }
-        .vertical-nav :hover{
-            color: rgb(189, 22, 204);
-        }
-        
-        .vertical-nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        .vertical-nav ul li {
-            margin-bottom: 10px;
-            border: black;
-            
-        }
-        
-        .vertical-nav ul li a {
-            text-decoration: none;
-            color: #0f0e0e;
-            font-weight: bold;
-            border: black;
-        }
-        
-        /* Style for the main content area */
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
-        
-        /* Additional styling for the content area */
-        .content h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        
-        .content p {
-            font-size: 16px;
-        }
-        </style>
-    <div class="container">
-        <nav class="vertical-nav">
-            <ul>
-                <li><a href="#">Home Page</a></li>
-                <li><a href="#">Musings</a></li>
-                <li><a href="#">My town</a></li>
-                <li><a href="#">Links</a></li>
-            </ul>
-        </nav>
-        <div class="content">
-            <h1>Main Content</h1>
-            <p>This is the main content area. You can add your text, images, and other content here.</p>
-        </div>
-    </div>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,41 +6,47 @@
     <title>Document</title>
     <style>
         body{
-            padding-left: 11em;
-            font-family: Georgia, "Times New Roman",Times, serif;
-            color: purple;
-            background-color: #d8da3d;
-            border-color: black;
-            height:300px;
-            max-width: 700px;
-             
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+        .container{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-bottom: 500px;
+            color: rgb(0, 110, 255); /* Align content at the top */
+        }
+        .navbar{
+            width: 9em;        
+            padding: 10px;
         }
         ul.navbar{
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            position: absolute;
-            top: 2em;
-            left: 1em;
+            list-style-type: none;  
             width: 9em;
-        }
-        h1{
-            font-family: Helvetica, Geneva, Arial,SunSans-Regular, sans-serif;
+            position: absolute;
+            margin-left: 5px;
         }
         ul.navbar li{
-            background: white;
+            background: rgb(255, 255, 255);
             margin: 0.5em 0;
             padding: 0.3em;
             border-right: 1em solid black;
         }
-        ul.navbar a{
-            text-decoration: none;
+        h1{
+            font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
         }
-        a:link{
-            color: blue;
-        }
-        a:visited{
+        .content{
+            padding-bottom: 250px;
+            padding-left: 200px;
+            text-align: left;
             color: purple;
+        }
+        table{
+            border: 1px solid black;
+            border-style: dashed;
+            background-color: #e2e44e;
+            width: 550px;
+            height: 300px;
+            margin: 50px;
         }
         address{
             margin-top: 1em;
@@ -136,22 +56,31 @@
     </style>
 </head>
 <body>
-    <table>
-        <ul class="navbar">
-            <li>Home page</li>
-            <li>Musings</li>
-            <li>My town</li>
-            <li>Links</li>
-        </ul>
-        <h1>My first styled page</h1>
-        <p>Welcome to my styled page!
-        <p>It lacks images, but at least it has style.
-          And it has links, even if they don't go
-          anywhere&hellip;
-        <p>There should be more here, but I don't know
-          what yet.
-        <address>Made 4 September 2023<br>
-            by myself.</address>
+    <table style="border-left: 1px solid black;border-right: 1px solid black;border-bottom: 0px solid black;border-top: 1px solid black;border-style: dashed;
+                  margin-left: 474px; margin-top: 100px;">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="container">
+                        <ul class="navbar">
+                            <li style="color: purple;">Home page</li>
+                            <li>Musings</li>
+                            <li>My town</li>
+                            <li>Links</li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <h1>My first styled page</h1>
+                        <p>Welcome to my styled page!</p>
+                        <p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere&hellip;</p>
+                        <p>There should be more here, but I don't know what yet.</p>
+                        <address>Made 4 September 2023<br>by Kommareddy Subba Reddy.</address>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
